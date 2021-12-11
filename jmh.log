@@ -1,0 +1,292 @@
+# JMH version: 1.33
+# VM version: JDK 1.8.0_312, OpenJDK 64-Bit Server VM, 25.312-b07
+# VM invoker: /home/faradaym/.jdks/corretto-1.8.0_312/jre/bin/java
+# VM options: -javaagent:/home/faradaym/ideaIC-2021.2.3/idea-IC-212.5457.46/lib/idea_rt.jar=43887:/home/faradaym/ideaIC-2021.2.3/idea-IC-212.5457.46/bin -Dfile.encoding=UTF-8
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 3 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each, 10 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: bench.Benchmark.JsonDeserializeTest
+
+# Run progress: 0,00% complete, ETA 00:17:20
+# Fork: 1 of 1
+# Warmup Iteration   1: 1631915,500 ops/s
+# Warmup Iteration   2: 1644500,576 ops/s
+# Warmup Iteration   3: 1446003,268 ops/s
+Iteration   1: 157558,019 ops/s
+Iteration   2: 122639,733 ops/s
+Iteration   3: 159045,076 ops/s
+Iteration   4: 159276,120 ops/s
+Iteration   5: 165971,859 ops/s
+Iteration   6: 140196,035 ops/s
+Iteration   7: 164056,934 ops/s
+Iteration   8: 163811,016 ops/s
+Iteration   9: 161653,345 ops/s
+Iteration  10: 157816,087 ops/s
+
+
+Result "bench.Benchmark.JsonDeserializeTest":
+  155202,423 ±(99.9%) 20404,579 ops/s [Average]
+  (min, avg, max) = (122639,733, 155202,423, 165971,859), stdev = 13496,365
+  CI (99.9%): [134797,844, 175607,001] (assumes normal distribution)
+
+
+# JMH version: 1.33
+# VM version: JDK 1.8.0_312, OpenJDK 64-Bit Server VM, 25.312-b07
+# VM invoker: /home/faradaym/.jdks/corretto-1.8.0_312/jre/bin/java
+# VM options: -javaagent:/home/faradaym/ideaIC-2021.2.3/idea-IC-212.5457.46/lib/idea_rt.jar=43887:/home/faradaym/ideaIC-2021.2.3/idea-IC-212.5457.46/bin -Dfile.encoding=UTF-8
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 3 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each, 10 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: bench.Benchmark.JsonSerializeTest
+
+# Run progress: 12,50% complete, ETA 00:15:15
+# Fork: 1 of 1
+# Warmup Iteration   1: 3396013,564 ops/s
+# Warmup Iteration   2: 3516533,719 ops/s
+# Warmup Iteration   3: 3527500,963 ops/s
+Iteration   1: 346488,179 ops/s
+Iteration   2: 314351,168 ops/s
+Iteration   3: 343508,499 ops/s
+Iteration   4: 275824,219 ops/s
+Iteration   5: 305515,783 ops/s
+Iteration   6: 316338,394 ops/s
+Iteration   7: 349628,905 ops/s
+Iteration   8: 357413,077 ops/s
+Iteration   9: 356373,209 ops/s
+Iteration  10: 346641,986 ops/s
+
+
+Result "bench.Benchmark.JsonSerializeTest":
+  331208,342 ±(99.9%) 40676,888 ops/s [Average]
+  (min, avg, max) = (275824,219, 331208,342, 357413,077), stdev = 26905,243
+  CI (99.9%): [290531,454, 371885,230] (assumes normal distribution)
+
+
+# JMH version: 1.33
+# VM version: JDK 1.8.0_312, OpenJDK 64-Bit Server VM, 25.312-b07
+# VM invoker: /home/faradaym/.jdks/corretto-1.8.0_312/jre/bin/java
+# VM options: -javaagent:/home/faradaym/ideaIC-2021.2.3/idea-IC-212.5457.46/lib/idea_rt.jar=43887:/home/faradaym/ideaIC-2021.2.3/idea-IC-212.5457.46/bin -Dfile.encoding=UTF-8
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 3 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each, 10 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: bench.Benchmark.ProtobufDeserializeTest
+
+# Run progress: 25,00% complete, ETA 00:13:04
+# Fork: 1 of 1
+# Warmup Iteration   1: 4342737,897 ops/s
+# Warmup Iteration   2: 5144676,839 ops/s
+# Warmup Iteration   3: 5195343,892 ops/s
+Iteration   1: 529163,475 ops/s
+Iteration   2: 523448,952 ops/s
+Iteration   3: 524510,451 ops/s
+Iteration   4: 523584,171 ops/s
+Iteration   5: 521301,453 ops/s
+Iteration   6: 524145,131 ops/s
+Iteration   7: 471794,016 ops/s
+Iteration   8: 431621,608 ops/s
+Iteration   9: 516632,677 ops/s
+Iteration  10: 526539,467 ops/s
+
+
+Result "bench.Benchmark.ProtobufDeserializeTest":
+  509274,140 ±(99.9%) 48301,023 ops/s [Average]
+  (min, avg, max) = (431621,608, 509274,140, 529163,475), stdev = 31948,136
+  CI (99.9%): [460973,117, 557575,164] (assumes normal distribution)
+
+
+# JMH version: 1.33
+# VM version: JDK 1.8.0_312, OpenJDK 64-Bit Server VM, 25.312-b07
+# VM invoker: /home/faradaym/.jdks/corretto-1.8.0_312/jre/bin/java
+# VM options: -javaagent:/home/faradaym/ideaIC-2021.2.3/idea-IC-212.5457.46/lib/idea_rt.jar=43887:/home/faradaym/ideaIC-2021.2.3/idea-IC-212.5457.46/bin -Dfile.encoding=UTF-8
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 3 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each, 10 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: bench.Benchmark.ProtobufSerializeTest
+
+# Run progress: 37,50% complete, ETA 00:10:53
+# Fork: 1 of 1
+# Warmup Iteration   1: 12442686,289 ops/s
+# Warmup Iteration   2: 12430106,269 ops/s
+# Warmup Iteration   3: 12473295,201 ops/s
+Iteration   1: 1243755,299 ops/s
+Iteration   2: 1253803,275 ops/s
+Iteration   3: 1253874,926 ops/s
+Iteration   4: 1168581,239 ops/s
+Iteration   5: 1051591,681 ops/s
+Iteration   6: 1105364,039 ops/s
+Iteration   7: 1103353,623 ops/s
+Iteration   8: 1174791,952 ops/s
+Iteration   9: 1057102,199 ops/s
+Iteration  10: 1291212,158 ops/s
+
+
+Result "bench.Benchmark.ProtobufSerializeTest":
+  1170343,039 ±(99.9%) 132951,796 ops/s [Average]
+  (min, avg, max) = (1051591,681, 1170343,039, 1291212,158), stdev = 87939,381
+  CI (99.9%): [1037391,243, 1303294,835] (assumes normal distribution)
+
+
+# JMH version: 1.33
+# VM version: JDK 1.8.0_312, OpenJDK 64-Bit Server VM, 25.312-b07
+# VM invoker: /home/faradaym/.jdks/corretto-1.8.0_312/jre/bin/java
+# VM options: -javaagent:/home/faradaym/ideaIC-2021.2.3/idea-IC-212.5457.46/lib/idea_rt.jar=43887:/home/faradaym/ideaIC-2021.2.3/idea-IC-212.5457.46/bin -Dfile.encoding=UTF-8
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 3 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each, 10 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bench.Benchmark.JsonDeserializeTest
+
+# Run progress: 50,00% complete, ETA 00:08:42
+# Fork: 1 of 1
+# Warmup Iteration   1: ≈ 10⁻⁶ s/op
+# Warmup Iteration   2: ≈ 10⁻⁶ s/op
+# Warmup Iteration   3: ≈ 10⁻⁶ s/op
+Iteration   1: ≈ 10⁻⁵ s/op
+Iteration   2: ≈ 10⁻⁵ s/op
+Iteration   3: ≈ 10⁻⁵ s/op
+Iteration   4: ≈ 10⁻⁵ s/op
+Iteration   5: ≈ 10⁻⁵ s/op
+Iteration   6: ≈ 10⁻⁵ s/op
+Iteration   7: ≈ 10⁻⁵ s/op
+Iteration   8: ≈ 10⁻⁵ s/op
+Iteration   9: ≈ 10⁻⁵ s/op
+Iteration  10: ≈ 10⁻⁵ s/op
+
+
+Result "bench.Benchmark.JsonDeserializeTest":
+  ≈ 10⁻⁵ s/op
+
+
+# JMH version: 1.33
+# VM version: JDK 1.8.0_312, OpenJDK 64-Bit Server VM, 25.312-b07
+# VM invoker: /home/faradaym/.jdks/corretto-1.8.0_312/jre/bin/java
+# VM options: -javaagent:/home/faradaym/ideaIC-2021.2.3/idea-IC-212.5457.46/lib/idea_rt.jar=43887:/home/faradaym/ideaIC-2021.2.3/idea-IC-212.5457.46/bin -Dfile.encoding=UTF-8
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 3 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each, 10 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bench.Benchmark.JsonSerializeTest
+
+# Run progress: 62,50% complete, ETA 00:06:32
+# Fork: 1 of 1
+# Warmup Iteration   1: ≈ 10⁻⁶ s/op
+# Warmup Iteration   2: ≈ 10⁻⁷ s/op
+# Warmup Iteration   3: ≈ 10⁻⁷ s/op
+Iteration   1: ≈ 10⁻⁶ s/op
+Iteration   2: ≈ 10⁻⁶ s/op
+Iteration   3: ≈ 10⁻⁶ s/op
+Iteration   4: ≈ 10⁻⁶ s/op
+Iteration   5: ≈ 10⁻⁶ s/op
+Iteration   6: ≈ 10⁻⁶ s/op
+Iteration   7: ≈ 10⁻⁶ s/op
+Iteration   8: ≈ 10⁻⁶ s/op
+Iteration   9: ≈ 10⁻⁶ s/op
+Iteration  10: ≈ 10⁻⁶ s/op
+
+
+Result "bench.Benchmark.JsonSerializeTest":
+  ≈ 10⁻⁶ s/op
+
+
+# JMH version: 1.33
+# VM version: JDK 1.8.0_312, OpenJDK 64-Bit Server VM, 25.312-b07
+# VM invoker: /home/faradaym/.jdks/corretto-1.8.0_312/jre/bin/java
+# VM options: -javaagent:/home/faradaym/ideaIC-2021.2.3/idea-IC-212.5457.46/lib/idea_rt.jar=43887:/home/faradaym/ideaIC-2021.2.3/idea-IC-212.5457.46/bin -Dfile.encoding=UTF-8
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 3 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each, 10 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bench.Benchmark.ProtobufDeserializeTest
+
+# Run progress: 75,00% complete, ETA 00:04:21
+# Fork: 1 of 1
+# Warmup Iteration   1: ≈ 10⁻⁷ s/op
+# Warmup Iteration   2: ≈ 10⁻⁷ s/op
+# Warmup Iteration   3: ≈ 10⁻⁷ s/op
+Iteration   1: ≈ 10⁻⁶ s/op
+Iteration   2: ≈ 10⁻⁶ s/op
+Iteration   3: ≈ 10⁻⁶ s/op
+Iteration   4: ≈ 10⁻⁶ s/op
+Iteration   5: ≈ 10⁻⁶ s/op
+Iteration   6: ≈ 10⁻⁶ s/op
+Iteration   7: ≈ 10⁻⁶ s/op
+Iteration   8: ≈ 10⁻⁶ s/op
+Iteration   9: ≈ 10⁻⁶ s/op
+Iteration  10: ≈ 10⁻⁶ s/op
+
+
+Result "bench.Benchmark.ProtobufDeserializeTest":
+  ≈ 10⁻⁶ s/op
+
+
+# JMH version: 1.33
+# VM version: JDK 1.8.0_312, OpenJDK 64-Bit Server VM, 25.312-b07
+# VM invoker: /home/faradaym/.jdks/corretto-1.8.0_312/jre/bin/java
+# VM options: -javaagent:/home/faradaym/ideaIC-2021.2.3/idea-IC-212.5457.46/lib/idea_rt.jar=43887:/home/faradaym/ideaIC-2021.2.3/idea-IC-212.5457.46/bin -Dfile.encoding=UTF-8
+# Blackhole mode: full + dont-inline hint (default, use -Djmh.blackhole.autoDetect=true to auto-detect)
+# Warmup: 3 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each, 10 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: bench.Benchmark.ProtobufSerializeTest
+
+# Run progress: 87,50% complete, ETA 00:02:10
+# Fork: 1 of 1
+# Warmup Iteration   1: ≈ 10⁻⁷ s/op
+# Warmup Iteration   2: ≈ 10⁻⁷ s/op
+# Warmup Iteration   3: ≈ 10⁻⁷ s/op
+Iteration   1: ≈ 10⁻⁶ s/op
+Iteration   2: ≈ 10⁻⁶ s/op
+Iteration   3: ≈ 10⁻⁶ s/op
+Iteration   4: ≈ 10⁻⁶ s/op
+Iteration   5: ≈ 10⁻⁶ s/op
+Iteration   6: ≈ 10⁻⁶ s/op
+Iteration   7: ≈ 10⁻⁶ s/op
+Iteration   8: ≈ 10⁻⁶ s/op
+Iteration   9: ≈ 10⁻⁶ s/op
+Iteration  10: ≈ 10⁻⁶ s/op
+
+
+Result "bench.Benchmark.ProtobufSerializeTest":
+  ≈ 10⁻⁶ s/op
+
+
+# Run complete. Total time: 00:17:25
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                           Mode  Cnt        Score        Error  Units
+Benchmark.JsonDeserializeTest      thrpt   10   155202,423 ±  20404,579  ops/s
+Benchmark.JsonSerializeTest        thrpt   10   331208,342 ±  40676,888  ops/s
+Benchmark.ProtobufDeserializeTest  thrpt   10   509274,140 ±  48301,023  ops/s
+Benchmark.ProtobufSerializeTest    thrpt   10  1170343,039 ± 132951,796  ops/s
+Benchmark.JsonDeserializeTest       avgt   10       ≈ 10⁻⁵                s/op
+Benchmark.JsonSerializeTest         avgt   10       ≈ 10⁻⁶                s/op
+Benchmark.ProtobufDeserializeTest   avgt   10       ≈ 10⁻⁶                s/op
+Benchmark.ProtobufSerializeTest     avgt   10       ≈ 10⁻⁶                s/op
+
+Process finished with exit code 0
+
