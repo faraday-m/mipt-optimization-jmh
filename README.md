@@ -3,16 +3,16 @@
 
 Результаты бенчмарка:
 
-|Benchmark                           |Mode  |Cnt        |
-|------------------------------------|------|-----------|
-Benchmark.JsonDeserializeTest      |thrpt   |10   155202,423 ±  20404,579  ops/s
-Benchmark.JsonSerializeTest        |thrpt   |10   331208,342 ±  40676,888  ops/s
-Benchmark.ProtobufDeserializeTest  |thrpt   |10   509274,140 ±  48301,023  ops/s
-Benchmark.ProtobufSerializeTest    |thrpt   |10  1170343,039 ± 132951,796  ops/s
-Benchmark.JsonDeserializeTest       |avgt   |10       ≈ 10⁻⁵                s/op
-Benchmark.JsonSerializeTest         |avgt   |10       ≈ 10⁻⁶                s/op
-Benchmark.ProtobufDeserializeTest   |avgt   |10       ≈ 10⁻⁶                s/op
-Benchmark.ProtobufSerializeTest     |avgt   |10       ≈ 10⁻⁶                s/op
+|Benchmark                           |Mode  |Cnt        |Score|Error|Metrics|
+|------------------------------------|------|-----------|-----|-----|-------|
+Benchmark.JsonDeserializeTest      |thrpt   |10   |155202,423 |±  20404,579  |ops/s|
+Benchmark.JsonSerializeTest        |thrpt   |10   |331208,342 |±  40676,888  |ops/s|
+Benchmark.ProtobufDeserializeTest  |thrpt   |10   |509274,140 |±  48301,023  |ops/s|
+Benchmark.ProtobufSerializeTest    |thrpt   |10  |1170343,039 |± 132951,796  |ops/s|
+Benchmark.JsonDeserializeTest       |avgt   |10       |≈ 10⁻⁵ |              |s/op|
+Benchmark.JsonSerializeTest         |avgt   |10       |≈ 10⁻⁶ |              |s/op|
+Benchmark.ProtobufDeserializeTest   |avgt   |10       |≈ 10⁻⁶ |              |s/op|
+Benchmark.ProtobufSerializeTest     |avgt   |10       |≈ 10⁻⁶ |              |s/op|
 
 Как видно, Protobuf опережает Jackson более чем в 3 раза как в сериализации, так и в десериализации. Это связано с более оптимальным для машины форматом бинарных данных - не требуется человекопонятность сериализуемого файла и добавление связанных с этим "лишних" символов, известны оффсеты полей и можно получить к ним доступ сразу же, без контекстного анализа. 
 
