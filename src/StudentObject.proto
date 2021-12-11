@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option java_outer_classname = "test.StudentProto";
+option java_package = "";
+import "google/protobuf/timestamp.proto";
+
+message StudentObject {
+  string surname = 1;
+  string name = 2;
+  string faculty = 3;
+  string group = 4;
+  google.protobuf.Timestamp dateOfAdmission = 5;
+  int32 term = 6;
+  bool isStudying = 7;
+}
